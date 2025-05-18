@@ -1,3 +1,5 @@
+Ejemplo 4:(entrada inválida)
+
 texto = vHola mundo con espaciosv;
  
 Esta entrada es inválida, ya que la gramática no permite espacios dentro de los strings delimitados por v.
