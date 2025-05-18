@@ -1,0 +1,16 @@
+Ejemplo 1: (Entrada válida)
+x = 10;
+y = 5;
+z = x + y;
+console.log(z);
+switch(x) {
+    case 10:
+        y = y + 1;
+        console.log(y);
+    case 15:
+        y = y + 2;
+        console.log(y);
+    default:
+        z = z + 1;
+        console.log(z);
+}
