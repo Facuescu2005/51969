@@ -46,14 +46,21 @@ En el cmd o powershell:
 Edita el archivo input.txt con tu código:(Ejemplo)
 
 nombre = vJuanv;
+
 console.log(nombre);
 
 switch (5) {
+
     case 5:
+    
         mensaje = vHolamundov;
+        
         console.log(mensaje);
+        
     default:
+    
         console.log(vAdiosv);
+        
 }
 
 Así deberia quedar:
