@@ -20,13 +20,23 @@ Herramienta para analizar código según la gramática , implementada con ANTLR4
 
 ## Configuración Inicial
 
+En el cmd o powershell:
+
 1. Clona el repositorio:
    
-   En el cmd o powershell:
+   git clone https://github.com/Facuescu2005/51969.git
    
-   git clone [url-del-repositorio]
-   
-   cd [directorio-del-proyecto]
+2. Entra al directorio donde esta el proyecto:
+
+   cd 51969
+
+3. Abre VS Code para trabajar con el código del proyecto
+
+   code .
+
+   ![image](https://github.com/user-attachments/assets/37d7067e-f30f-4f45-9842-151bd6fc6119)
+
+   Ahora deberia estar adentro de visual studio con el proyecto abierto
 
 ## Uso Básico
 1. Modificar el input
