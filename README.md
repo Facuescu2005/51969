@@ -56,6 +56,7 @@ Así deberia quedar:
    ![image](https://github.com/user-attachments/assets/11f0468a-ae23-4bbd-9edd-7461d16937af)
 
 El programa mostrará:
+
 1.Tabla de tokens/lexemas
 
 2.Árbol de derivación
@@ -109,6 +110,8 @@ c = 2;
 resultado = (a + b) * c - (b / c);
 
 console.log(resultado);
+
+---------------------------------
 
 
 Puse estos ejemplos ya que mi tema no tiene ejemplos para probar.
