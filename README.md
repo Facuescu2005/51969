@@ -30,6 +30,7 @@ Herramienta para analizar código según la gramática , implementada con ANTLR4
 
 ## Uso Básico
 1. Modificar el input
+   
 ![image](https://github.com/user-attachments/assets/7503fcac-d658-43e0-b6c2-23ad8c81b5c1)
 
 Edita el archivo input.txt con tu código:(Ejemplo)
@@ -97,6 +98,7 @@ console.log(resta);
 console.log(multiplicacion);
 
 console.log(division);
+
 ----------------------------------
 a = 10;
 
@@ -107,6 +109,7 @@ c = 2;
 resultado = (a + b) * c - (b / c);
 
 console.log(resultado);
+
 
 Puse estos ejemplos ya que mi tema no tiene ejemplos para probar.
 
