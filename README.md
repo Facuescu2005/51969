@@ -51,15 +51,15 @@ console.log(nombre);
 
 switch (5) {
 
-    case 5:
+ case 5:
     
-        mensaje = vHolamundov;
+   mensaje = vHolamundov;
         
-        console.log(mensaje);
+   console.log(mensaje);
         
-    default:
+   default:
     
-        console.log(vAdiosv);
+   console.log(vAdiosv);
         
 }
 
