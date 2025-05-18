@@ -1,7 +1,13 @@
-x = 2 + 3
-y = 3
-z = x + y
-z
+a = 10;
+b = 5;
+c = 2;
+
+resultado = (a + b) * c - (b / c);
+
+console.log(resultado);
+
+    
+
 
 
 

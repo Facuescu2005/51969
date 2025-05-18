@@ -1,8 +1,8 @@
 import { Parser } from "antlr4";
-import CalculatorVisitor from "./generated/CalculatorVisitor.js";
-import CalculatorParser from "./generated/CalculatorParser.js";
+import MessiVisitor from "./generated/MessiVisitor.js";
+import MessiParser from "./generated/MessiParser.js";
 
-export class CustomCalculatorVisitor extends CalculatorVisitor{
+export class CustomMessiVisitor extends MessiVisitor{
 
     constructor() {
         super();
@@ -13,7 +13,7 @@ export class CustomCalculatorVisitor extends CalculatorVisitor{
         //obtengo el lexema correspondiente al INT que reconocio en el texto y lo convierto a entero.
         return parseInt(ctx.INT().getText());
     }
-
+    
     visitPrintExpr(ctx) {
         const value = this.visit(ctx.expr());
         console.log(`\nResultado: ${value}`);
@@ -34,7 +34,7 @@ export class CustomCalculatorVisitor extends CalculatorVisitor{
       visitAddSub(ctx) {
         const left =  this.visit(ctx.expr(0));  
         const right = this.visit(ctx.expr(1));  
-        if (ctx.op.type==CalculatorParser.ADD){
+        if (ctx.op.type==MessiParser.ADD){
           return left + right; }
         else
           return left - right;
