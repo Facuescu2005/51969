@@ -1,0 +1,101 @@
+Gramática asignada en código original: 
+Program ::= { Statement }
+
+Statement ::= SwitchStatement | AssignmentStatement | ConsoleStatement
+
+SwitchStatement ::= "switch" "(" Expression ")" "{" { CaseClause } [ DefaultClause ] "}"
+
+CaseClause ::= "case" Expression ":" { Statement }
+
+DefaultClause ::= "default" ":" { Statement }
+
+AssignmentStatement ::= Identifier "=" Expression ";"
+
+ConsoleStatement ::= "console" "." "log" "(" Expression ")" ";"
+
+Expression ::= Term ( ("+" | "-" | "*" | "/") Term )
+
+Term ::= Identifier | Number | "(" Expression ")" | StringLiteral
+
+StringLiteral ::= "v" { any character except "v" } "v"
+
+Identifier ::= letter { letter | digit | "_" }
+
+Number ::= digit { digit }
+
+letter ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" 
+         | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" 
+         | "u" | "v" | "w" | "x" | "y" | "z" 
+         | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" 
+         | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" 
+         | "U" | "V" | "W" | "X" | "Y" | "Z"
+
+digit ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+
+
+En antlr:
+program
+    : statement*
+    ;
+
+statement
+    : switchStatement
+    | assignmentStatement
+    | consoleStatement
+    ;
+
+switchStatement
+    : 'switch' '(' expression ')' '{' caseClause* defaultClause? '}'
+    ;
+
+caseClause
+    : 'case' expression ':' statement*
+    ;
+
+defaultClause
+    : 'default' ':' statement*
+    ;
+
+assignmentStatement
+    : Identifier '=' expression ';'
+    ;
+
+consoleStatement
+    : 'console' '.' 'log' '(' expression ')' ';'
+    ;
+
+expression
+    : term (('+' | '-' | '*' | '/') term)*
+    ;
+
+term
+    : Identifier
+    | Number
+    | '(' expression ')'
+    | StringLiteral
+    ;
+
+StringLiteral
+    : '"' .*? '"'
+    ;
+
+Identifier
+    : Letter (Letter | Digit | '_')*
+    ;
+
+Number
+    : Digit+
+    ;
+
+fragment Letter
+    : [a-zA-Z]
+    ;
+
+fragment Digit
+    : [0-9]
+    ;
+
+WS
+    : [ \t\r\n]+ -> skip
+    ;
