@@ -1,6 +1,8 @@
 Ejemplo 3: (entrada inválida)
 
+
 a = 10;
 b = a % 3;
+
 
 Esta entrada es inválida, ya que la gramática solo define +, -, *, /.
