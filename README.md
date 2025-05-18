@@ -45,21 +45,20 @@ En el cmd o powershell:
 
 Edita el archivo input.txt con tu código:(Ejemplo)
 
-a = 10;
+nombre = vJuanv;
+console.log(nombre);
 
-b = 20;
-
-resultado = a + b;
-
-console.log(resultado);
-
-mensaje = vHolaMundov;
-
-console.log(mensaje);
+switch (5) {
+    case 5:
+        mensaje = vHolamundov;
+        console.log(mensaje);
+    default:
+        console.log(vAdiosv);
+}
 
 Así deberia quedar:
 
-![image](https://github.com/user-attachments/assets/adb49889-29d6-4357-9d89-83ca955426f8)
+![image](https://github.com/user-attachments/assets/510de601-524f-45c0-886a-e7b921614f9c)
 
 2. Ejecutar el analizador en la terminal del Visual Studio node index.js
 
@@ -77,7 +76,10 @@ El programa mostrará:
 
 Ejemplo de como debería salir:
 
-![image](https://github.com/user-attachments/assets/b5193adc-2a3e-4b5e-8fd6-d27f61242fa7)
+![image](https://github.com/user-attachments/assets/473cb042-4b16-4411-9dfb-435484704728)
+![image](https://github.com/user-attachments/assets/41b170ca-b85f-4a15-9e8a-5444cf2c6bbb)
+
+
 
 Puedes probar otros códigos válidos como:
 
