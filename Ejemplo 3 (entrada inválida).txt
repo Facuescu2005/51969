@@ -1,5 +1,3 @@
-Ejemplo 3: (entrada inválida)
-
 
 a = 10;
 b = a % 3;
