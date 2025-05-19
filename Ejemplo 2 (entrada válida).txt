@@ -1,4 +1,3 @@
-Ejemplo 2:(entrada válida)
 
 nombre = vJuanv;
 console.log(nombre);
